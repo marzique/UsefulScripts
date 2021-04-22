@@ -1,0 +1,3 @@
+BEGIN;
+SELECT setval(pg_get_serial_sequence('"cards_order"','id'), coalesce(max("id") + 50000, 1), max("id") IS NOT null) FROM "cards_order";
+COMMIT;
