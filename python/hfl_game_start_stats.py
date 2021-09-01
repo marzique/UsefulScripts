@@ -63,9 +63,9 @@ def calculate_frequencies(day_stats):
 
 def print_lines_by_hours(hours_frequency):
      for hour, freq in hours_frequency.items():
-            padding_from = '0' * (2 - len(str(hour)))
-            padding_to = '0' * (2 - len(str(hour + 1)))
-            print(f'{padding_from}{hour}:00-{padding_to}{hour+1}:00 ' + '|' * freq)
+        padding_from = '0' * (2 - len(str(hour)))
+        padding_to = '0' * (2 - len(str(hour + 1)))
+        print(f'{padding_from}{hour}:00-{padding_to}{hour+1}:00 ' + '|' * freq)
 
 
 def print_frequency_stats(time_stats):
